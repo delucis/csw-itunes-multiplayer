@@ -36,7 +36,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 105.0, 435.0, 60.0, 20.0 ],
+					"patching_rect" : [ 105.0, 390.0, 60.0, 20.0 ],
 					"text" : "tosymbol"
 				}
 
@@ -50,7 +50,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 240.0, 375.0, 24.0, 20.0 ],
+					"patching_rect" : [ 240.0, 330.0, 24.0, 20.0 ],
 					"presentation_rect" : [ 214.0, 374.0, 0.0, 0.0 ],
 					"text" : "t 1"
 				}
@@ -65,7 +65,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 240.0, 405.0, 34.0, 20.0 ],
+					"patching_rect" : [ 240.0, 360.0, 34.0, 20.0 ],
 					"text" : "gate"
 				}
 
@@ -79,7 +79,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "bang", "" ],
-					"patching_rect" : [ 285.0, 375.0, 46.0, 20.0 ],
+					"patching_rect" : [ 285.0, 330.0, 46.0, 20.0 ],
 					"text" : "t 0 b s"
 				}
 
@@ -93,7 +93,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 105.0, 375.0, 24.0, 20.0 ],
+					"patching_rect" : [ 105.0, 330.0, 24.0, 20.0 ],
 					"text" : "t 1"
 				}
 
@@ -107,7 +107,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 105.0, 405.0, 34.0, 20.0 ],
+					"patching_rect" : [ 105.0, 360.0, 34.0, 20.0 ],
 					"text" : "gate"
 				}
 
@@ -121,7 +121,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 5,
 					"outlettype" : [ "bang", "bang", "bang", "bang", "" ],
-					"patching_rect" : [ 105.0, 345.0, 199.0, 20.0 ],
+					"patching_rect" : [ 105.0, 300.0, 199.0, 20.0 ],
 					"text" : "sel Name Artist Album Location"
 				}
 
@@ -135,7 +135,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 105.0, 465.0, 54.0, 20.0 ],
+					"patching_rect" : [ 105.0, 420.0, 54.0, 20.0 ],
 					"text" : "zl.group"
 				}
 
@@ -149,7 +149,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 105.0, 315.0, 34.0, 20.0 ],
+					"patching_rect" : [ 105.0, 270.0, 34.0, 20.0 ],
 					"text" : "gate"
 				}
 
@@ -163,7 +163,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 255.0, 285.0, 136.0, 20.0 ],
+					"patching_rect" : [ 255.0, 240.0, 136.0, 20.0 ],
 					"text" : "if $i1 == 4 then 1 else 0"
 				}
 
@@ -177,7 +177,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 300.0, 225.0, 54.0, 18.0 ],
+					"patching_rect" : [ 300.0, 180.0, 54.0, 18.0 ],
 					"text" : "serialize"
 				}
 
@@ -190,7 +190,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 105.0, 495.0, 81.0, 20.0 ],
+					"patching_rect" : [ 105.0, 450.0, 81.0, 20.0 ],
 					"text" : "print grouped"
 				}
 
@@ -204,7 +204,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 8,
 					"outlettype" : [ "int", "", "", "", "", "int", "int", "" ],
-					"patching_rect" : [ 105.0, 255.0, 229.0, 20.0 ],
+					"patching_rect" : [ 105.0, 210.0, 229.0, 20.0 ],
 					"text" : "sadam.rapidXML @symbolOutput 1"
 				}
 
@@ -218,7 +218,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 240.0, 225.0, 50.0, 18.0 ],
+					"patching_rect" : [ 240.0, 180.0, 50.0, 18.0 ],
 					"text" : "getTree"
 				}
 
@@ -232,7 +232,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 105.0, 225.0, 82.0, 20.0 ],
+					"patching_rect" : [ 105.0, 180.0, 82.0, 20.0 ],
 					"text" : "prepend read"
 				}
 
@@ -244,7 +244,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 255.0, 165.0, 20.0, 20.0 ]
+					"patching_rect" : [ 255.0, 120.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -261,7 +261,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 135.0, 135.0, 94.0, 20.0 ],
+					"patching_rect" : [ 135.0, 90.0, 94.0, 20.0 ],
 					"rounded" : 20.0,
 					"text" : "OPEN"
 				}
@@ -276,7 +276,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 135.0, 165.0, 102.0, 20.0 ],
+					"patching_rect" : [ 135.0, 120.0, 102.0, 20.0 ],
 					"text" : "opendialog TEXT"
 				}
 
@@ -292,9 +292,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 112.5, 50.5, 149.0, 35.0 ],
+					"patching_rect" : [ 113.0, 27.5, 149.0, 35.0 ],
 					"text" : "drag and drop \"iTunes Music Library.xml\" here…",
-					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ],
+					"textcolor" : [ 0.0, 0.0, 0.0, 0.65 ],
 					"textjustification" : 1
 				}
 
@@ -308,7 +308,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 105.0, 195.0, 82.0, 20.0 ],
+					"patching_rect" : [ 105.0, 150.0, 82.0, 20.0 ],
 					"text" : "v itunes_path"
 				}
 
@@ -316,12 +316,13 @@
 , 			{
 				"box" : 				{
 					"border" : 1.0,
+					"bordercolor" : [ 0.047059, 0.972549, 0.392157, 1.0 ],
 					"id" : "obj-19",
 					"maxclass" : "dropfile",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 105.0, 15.0, 165.0, 105.0 ],
+					"patching_rect" : [ 105.0, 15.0, 165.0, 60.0 ],
 					"rounded" : 0.0
 				}
 
@@ -342,6 +343,20 @@
 					"patching_rect" : [ 15.0, 15.0, 40.0, 40.0 ],
 					"rounded" : 40.0,
 					"text" : "INIT"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"grad1" : [ 0.94902, 0.376471, 0.0, 0.15 ],
+					"grad2" : [ 0.047059, 0.972549, 0.392157, 0.15 ],
+					"id" : "obj-57",
+					"maxclass" : "panel",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 105.0, 15.0, 165.0, 60.0 ],
+					"rounded" : 0
 				}
 
 			}

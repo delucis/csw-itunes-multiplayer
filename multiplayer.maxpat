@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 44.0, 876.0, 706.0 ],
+		"rect" : [ 0.0, 44.0, 577.0, 401.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,20 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 12.0,
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 274.0, 345.0, 130.0, 20.0 ],
+					"text" : "poly~ itunes-player 20"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 12.0,
@@ -2409,6 +2423,13 @@
 				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/myPatches/20150205 iTunes multiplayer/csw-itunes-multiplayer",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "itunes-player.maxpat",
+				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/myPatches/20150205 iTunes multiplayer/csw-itunes-multiplayer/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{

@@ -27,7 +27,7 @@ function exec(arg)
 	sqlite.exec(arg, result);
 
 	// access information about the returned records by calling functions on the result object
-	formatResultForCellblock();
+	formatResultForSfPlay();
 }
 
 
@@ -36,24 +36,19 @@ function getversion()
 	post("SQLite Version: " + sqlite.getversion() + "\n");
 }
 
-
-function formatResultForCellblock()
+function formatResultForSfPlay()
 {
     var numfields = result.numfields();
     var numrecords = result.numrecords();
     var fieldnames = new Array(numfields);
     var values = new Array(numfields);
 
-	outlet(0, "clear", "all");
-	outlet(0, "cols", numfields);
-	outlet(0, "rows", numrecords + 1);    // rows +1 so we can create a header row
-
 	for(var i=0; i<numfields; i++)
-		outlet(0, "set", i, 0, result.fieldname(i));
+		outlet(0, result.fieldname(i));
 
 	for(var i=0; i<numrecords; i++){
 		for(var j=0; j<numfields; j++)
-			outlet(0, "set", j, i+1, result.value(j, i));
+			outlet(0, result.value(j, i));
 	}
 }
 

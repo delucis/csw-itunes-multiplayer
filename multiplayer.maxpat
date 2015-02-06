@@ -292,9 +292,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 113.0, 27.5, 149.0, 35.0 ],
+					"patching_rect" : [ 113.0, 27.5, 150.0, 35.0 ],
 					"text" : "drag and drop \"iTunes Music Library.xml\" here…",
-					"textcolor" : [ 0.0, 0.0, 0.0, 0.65 ],
+					"textcolor" : [ 0.94902, 0.376471, 0.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -310,20 +310,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 105.0, 150.0, 82.0, 20.0 ],
 					"text" : "v itunes_path"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"border" : 1.0,
-					"bordercolor" : [ 0.047059, 0.972549, 0.392157, 1.0 ],
-					"id" : "obj-19",
-					"maxclass" : "dropfile",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 105.0, 15.0, 165.0, 60.0 ],
-					"rounded" : 0.0
 				}
 
 			}
@@ -348,7 +334,21 @@
 			}
 , 			{
 				"box" : 				{
-					"grad1" : [ 0.94902, 0.376471, 0.0, 0.15 ],
+					"border" : 1.0,
+					"bordercolor" : [ 0.94902, 0.376471, 0.0, 1.0 ],
+					"id" : "obj-19",
+					"maxclass" : "dropfile",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 105.0, 15.0, 165.0, 60.0 ],
+					"rounded" : 0.0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"grad1" : [ 0.94902, 0.376471, 0.0, 0.1 ],
 					"grad2" : [ 0.047059, 0.972549, 0.392157, 0.15 ],
 					"id" : "obj-57",
 					"maxclass" : "panel",

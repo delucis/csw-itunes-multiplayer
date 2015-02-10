@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 544.0, 213.0, 193.0, 90.0 ],
+		"rect" : [ 544.0, 213.0, 221.0, 90.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -36,8 +36,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 15.0, 45.0, 69.0, 20.0 ],
-					"text" : "jit.qt.movie"
+					"patching_rect" : [ 15.0, 45.0, 189.0, 20.0 ],
+					"text" : "jit.qt.movie @autostart 0 @vol 0.5"
 				}
 
 			}
@@ -67,10 +67,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 15.0, 15.0, 30.0, 20.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in 1"
 				}
 
@@ -85,7 +81,8 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [  ]
 	}
 
 }

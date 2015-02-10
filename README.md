@@ -8,5 +8,5 @@ Parses iTunes Library XML file, retrieving artist, album, track name and file lo
 
 ## Dependencies
 
-* [sadam.rapidXML] from Ádám Siska’s [sadam library](http://sadam.hu/en/software)
-* [mxj ej.urn] from Emmanuel Jourdan’s [ejies collection](https://github.com/emmanueljourdan/ejies)
+* [sadam.rapidXML] from Ádám Siska’s [sadam library](http://sadam.hu/en/software) for parsing the iTunes XML
+* [mxj ej.urn] from Emmanuel Jourdan’s [ejies collection](https://github.com/emmanueljourdan/ejies) to deal with random selection from a database containing more than 4096 entries

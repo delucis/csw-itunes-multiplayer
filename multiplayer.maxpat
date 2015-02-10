@@ -195,36 +195,6 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Helvetica Neue",
-					"fontsize" : 12.0,
-					"id" : "obj-12",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 15.0, 510.0, 122.0, 32.0 ],
-					"text" : ";\rto-database closedb"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Helvetica Neue",
-					"fontsize" : 12.0,
-					"id" : "obj-10",
-					"linecount" : 3,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 15.0, 450.0, 122.0, 46.0 ],
-					"text" : ";\rto-database opendb ./TrackDatabase"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgcolor" : [ 0.047059, 0.972549, 0.392157, 0.15 ],
 					"bgoncolor" : [ 0.94902, 0.376471, 0.0, 1.0 ],
 					"bgovercolor" : [ 0.047059, 0.972549, 0.392157, 1.0 ],
@@ -730,7 +700,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 354.0, 44.0, 764.0, 547.0 ],
+						"rect" : [ 62.0, 67.0, 764.0, 547.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -750,6 +720,49 @@
 						"digest" : "",
 						"tags" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-18",
+									"linecount" : 4,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 255.0, 105.0, 180.0, 60.0 ],
+									"text" : "………………, Initialising database……, Max may appear to hang., Please be patient., ………………, ………………"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-10",
+									"linecount" : 2,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 450.0, 105.0, 101.0, 32.0 ],
+									"text" : ";\rmax maxwindow"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-8",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 255.0, 180.0, 78.0, 20.0 ],
+									"text" : "print initializr"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
@@ -966,7 +979,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 199.0, 105.0, 46.0, 20.0 ],
+									"patching_rect" : [ 173.333328, 105.0, 46.0, 20.0 ],
 									"text" : "s reset"
 								}
 
@@ -978,10 +991,10 @@
 									"id" : "obj-62",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
-									"patching_rect" : [ 150.0, 75.0, 68.0, 20.0 ],
-									"text" : "t getTree b"
+									"numoutlets" : 4,
+									"outlettype" : [ "", "bang", "bang", "bang" ],
+									"patching_rect" : [ 150.0, 75.0, 89.0, 20.0 ],
+									"text" : "t getTree b b b"
 								}
 
 							}
@@ -1250,6 +1263,15 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-18", 0 ]
 								}
 
 							}
@@ -1597,6 +1619,24 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-61", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-10", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-62", 3 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-18", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-62", 2 ]
 								}
 
 							}
@@ -3027,6 +3067,7 @@
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 3,
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
@@ -3035,8 +3076,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 240.0, 240.0, 48.0 ],
-					"text" : "For larger libraries initialisation can take a very long time. Max will be unresponsive during this time. Be patient!"
+					"patching_rect" : [ 15.0, 240.0, 250.0, 49.0 ],
+					"text" : "Caution: For larger libraries initialisation can take a very long time. Max will be unresponsive during this time. Be patient!"
 				}
 
 			}

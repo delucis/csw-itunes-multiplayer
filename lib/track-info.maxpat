@@ -10,7 +10,7 @@
 ,
 		"rect" : [ 25.0, 69.0, 405.0, 61.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Helvetica Neue",
@@ -21,8 +21,8 @@
 		"toolbarvisible" : 1,
 		"boxanimatetime" : 200,
 		"imprint" : 0,
-		"enablehscroll" : 1,
-		"enablevscroll" : 1,
+		"enablehscroll" : 0,
+		"enablevscroll" : 0,
 		"devicewidth" : 0.0,
 		"description" : "",
 		"digest" : "",
@@ -53,7 +53,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 90.0, 45.0, 75.0, 20.0 ],
-					"presentation_rect" : [ 166.0, 49.0, 0.0, 0.0 ],
 					"text" : "prepend set"
 				}
 

@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ -4.0, 44.0, 879.0, 397.0 ],
+		"rect" : [ 0.0, 44.0, 879.0, 397.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -65,7 +65,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 527.333313, 180.0, 60.0, 20.0 ],
-					"presentation_rect" : [ 546.666626, 180.0, 0.0, 0.0 ],
 					"text" : "tosymbol"
 				}
 
@@ -194,8 +193,7 @@
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"numoutlets" : 0,
 					"patching_rect" : [ 720.0, 15.0, 130.0, 20.0 ],
 					"text" : "poly~ itunes-player 20"
 				}
@@ -1170,13 +1168,14 @@
 							}
 , 							{
 								"box" : 								{
-									"comment" : "",
+									"annotation" : "Index Nr. (int)",
+									"comment" : "Index Nr. (int)",
+									"hint" : "",
 									"id" : "obj-4",
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 15.0, 135.0, 25.0, 25.0 ],
-									"presentation_rect" : [ 9.0, 141.0, 0.0, 0.0 ]
+									"patching_rect" : [ 15.0, 135.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -1195,7 +1194,8 @@
 							}
 , 							{
 								"box" : 								{
-									"comment" : "",
+									"annotation" : "File Path (string)",
+									"comment" : "File Path (string)",
 									"id" : "obj-3",
 									"maxclass" : "outlet",
 									"numinlets" : 1,
@@ -1206,7 +1206,8 @@
 							}
 , 							{
 								"box" : 								{
-									"comment" : "",
+									"annotation" : "Artist Name (string)",
+									"comment" : "Artist Name (string)",
 									"id" : "obj-2",
 									"maxclass" : "outlet",
 									"numinlets" : 1,
@@ -1217,7 +1218,8 @@
 							}
 , 							{
 								"box" : 								{
-									"comment" : "",
+									"annotation" : "Track Name (string)",
+									"comment" : "Track Name (string)",
 									"id" : "obj-1",
 									"maxclass" : "outlet",
 									"numinlets" : 1,

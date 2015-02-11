@@ -43,6 +43,7 @@
 			}
 , 			{
 				"box" : 				{
+					"focusbordercolor" : [ 0.047059, 0.972549, 0.392157, 1.0 ],
 					"fontname" : "Fira Sans OT",
 					"fontsize" : 12.0,
 					"id" : "obj-26",
@@ -68,6 +69,7 @@
 
 					}
 ,
+					"trioncolor" : [ 0.047059, 0.972549, 0.392157, 1.0 ],
 					"varname" : "volume.slider"
 				}
 

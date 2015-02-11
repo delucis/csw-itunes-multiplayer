@@ -49,12 +49,11 @@
 					"maxclass" : "live.slider",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"orientation" : 1,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 765.0, 45.0, 90.0, 55.0 ],
+					"patching_rect" : [ 765.0, 15.0, 90.0, 75.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 765.0, 45.0, 90.0, 55.0 ],
+					"presentation_rect" : [ 150.0, 150.0, 60.0, 105.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_linknames" : 1,
@@ -80,15 +79,13 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-24",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 555.0, 15.0, 199.0, 44.0 ],
+					"patching_rect" : [ 555.0, 15.0, 199.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 555.0, 15.0, 199.0, 44.0 ],
-					"text" : "\nstart/stop playback",
+					"presentation_rect" : [ 15.0, 150.0, 120.0, 25.0 ],
+					"text" : "start/stop playback",
 					"textjustification" : 1
 				}
 
@@ -99,7 +96,7 @@
 					"bgoncolor" : [ 0.94902, 0.376471, 0.0, 1.0 ],
 					"bgovercolor" : [ 0.047059, 0.972549, 0.392157, 1.0 ],
 					"border" : 1,
-					"bordercolor" : [ 0.94902, 0.376471, 0.0, 1.0 ],
+					"bordercolor" : [ 0.5, 0.5, 0.5, 1.0 ],
 					"borderoncolor" : [ 0.984314, 0.819608, 0.05098, 1.0 ],
 					"fontface" : 1,
 					"fontname" : "Fira Sans OT",
@@ -112,11 +109,11 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 660.0, 60.0, 90.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 660.0, 60.0, 90.0, 20.0 ],
+					"presentation_rect" : [ 30.0, 210.0, 90.0, 20.0 ],
 					"rounded" : 20.0,
 					"text" : "STOP",
-					"textcolor" : [ 0.94902, 0.376471, 0.0, 1.0 ],
-					"textovercolor" : [ 0.94902, 0.376471, 0.0, 1.0 ]
+					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ],
+					"textovercolor" : [ 0.5, 0.5, 0.5, 1.0 ]
 				}
 
 			}
@@ -126,7 +123,7 @@
 					"bgoncolor" : [ 0.94902, 0.376471, 0.0, 1.0 ],
 					"bgovercolor" : [ 0.047059, 0.972549, 0.392157, 1.0 ],
 					"border" : 1,
-					"bordercolor" : [ 0.94902, 0.376471, 0.0, 1.0 ],
+					"bordercolor" : [ 0.5, 0.5, 0.5, 1.0 ],
 					"borderoncolor" : [ 0.984314, 0.819608, 0.05098, 1.0 ],
 					"fontface" : 1,
 					"fontname" : "Fira Sans OT",
@@ -139,11 +136,11 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 555.0, 60.0, 90.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 555.0, 60.0, 90.0, 20.0 ],
+					"presentation_rect" : [ 30.0, 180.0, 90.0, 20.0 ],
 					"rounded" : 20.0,
 					"text" : "START",
-					"textcolor" : [ 0.94902, 0.376471, 0.0, 1.0 ],
-					"textovercolor" : [ 0.94902, 0.376471, 0.0, 1.0 ]
+					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ],
+					"textovercolor" : [ 0.5, 0.5, 0.5, 1.0 ]
 				}
 
 			}
@@ -430,7 +427,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 15.0, 15.0, 135.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 15.0, 135.0, 20.0 ],
+					"presentation_rect" : [ 45.0, 15.0, 135.0, 20.0 ],
 					"rounded" : 20.0,
 					"text" : "INIT W/ EXISTING DB",
 					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ],
@@ -457,10 +454,10 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 135.0, 150.0, 90.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 135.0, 150.0, 90.0, 20.0 ],
+					"presentation_rect" : [ 120.0, 360.0, 90.0, 20.0 ],
 					"rounded" : 20.0,
 					"text" : "FILL DB",
-					"textcolor" : [ 0.94902, 0.376471, 0.0, 1.0 ],
+					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ],
 					"textovercolor" : [ 0.25, 0.25, 0.25, 1.0 ]
 				}
 
@@ -3098,15 +3095,13 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-66",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 390.0, 15.0, 153.0, 44.0 ],
+					"patching_rect" : [ 390.0, 15.0, 153.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 390.0, 15.0, 153.0, 44.0 ],
-					"text" : "\ngrab tracks from database",
+					"presentation_rect" : [ 15.0, 105.0, 155.0, 25.0 ],
+					"text" : "grab tracks from database",
 					"textjustification" : 1
 				}
 
@@ -3366,8 +3361,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 15.0, 240.0, 242.0, 62.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 3,
-					"presentation_rect" : [ 15.0, 240.0, 242.0, 62.0 ],
+					"presentation_linecount" : 4,
+					"presentation_rect" : [ 15.0, 390.0, 195.0, 81.0 ],
 					"text" : "Caution: For larger libraries initialisation can take a very long time. Max will be unresponsive during this time. Be patient!"
 				}
 
@@ -3385,8 +3380,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 270.0, 15.0, 91.0, 44.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 270.0, 15.0, 91.0, 44.0 ],
+					"presentation_rect" : [ 15.0, 60.0, 146.0, 25.0 ],
 					"text" : "number of tracks to grab",
 					"textjustification" : 1
 				}
@@ -3408,8 +3402,10 @@
 			}
 , 			{
 				"box" : 				{
+					"bordercolor" : [ 0.8, 0.839216, 0.709804, 1.0 ],
 					"fontname" : "Fira Sans OT",
 					"fontsize" : 14.0,
+					"htricolor" : [ 0.047059, 0.972549, 0.392157, 1.0 ],
 					"id" : "obj-14",
 					"maxclass" : "number",
 					"minimum" : 0,
@@ -3419,7 +3415,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 270.0, 60.0, 54.0, 28.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 270.0, 60.0, 54.0, 28.0 ],
+					"presentation_rect" : [ 165.0, 58.5, 45.0, 28.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "number",
@@ -3432,6 +3428,7 @@
 
 					}
 ,
+					"triscale" : 1.2,
 					"varname" : "number"
 				}
 
@@ -3451,14 +3448,18 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.91, 0.91, 0.91, 0.75 ],
+					"blinkcolor" : [ 0.047059, 0.972549, 0.392157, 1.0 ],
+					"fgcolor" : [ 0.047059, 0.972549, 0.392157, 0.15 ],
 					"id" : "obj-98",
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 390.0, 60.0, 20.0, 20.0 ],
+					"outlinecolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"patching_rect" : [ 390.0, 60.0, 30.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 390.0, 60.0, 20.0, 20.0 ]
+					"presentation_rect" : [ 172.5, 102.5, 30.0, 30.0 ]
 				}
 
 			}
@@ -3495,7 +3496,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 30.0, 150.0, 90.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 30.0, 150.0, 90.0, 20.0 ],
+					"presentation_rect" : [ 15.0, 360.0, 90.0, 20.0 ],
 					"rounded" : 20.0,
 					"text" : "OPEN",
 					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ],
@@ -3551,7 +3552,7 @@
 					"patching_rect" : [ 19.0, 83.0, 157.0, 44.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 19.0, 83.0, 157.0, 44.0 ],
+					"presentation_rect" : [ 32.0, 293.0, 161.0, 44.0 ],
 					"text" : "drag and drop \"iTunes Music Library.xml\" here…",
 					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ],
 					"textjustification" : 1
@@ -3568,7 +3569,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 15.0, 75.0, 165.0, 60.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 75.0, 165.0, 60.0 ],
+					"presentation_rect" : [ 15.0, 285.0, 195.0, 60.0 ],
 					"rounded" : 0.0
 				}
 
@@ -3584,7 +3585,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 15.0, 75.0, 165.0, 60.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 75.0, 165.0, 60.0 ],
+					"presentation_rect" : [ 15.0, 285.0, 195.0, 60.0 ],
 					"rounded" : 0
 				}
 

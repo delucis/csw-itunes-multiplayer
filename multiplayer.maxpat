@@ -4211,6 +4211,7 @@
 					"htricolor" : [ 0.047059, 0.972549, 0.392157, 1.0 ],
 					"id" : "obj-14",
 					"maxclass" : "number",
+					"maximum" : 32,
 					"minimum" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,

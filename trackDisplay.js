@@ -20,6 +20,12 @@ var trackInfo = new Array(32);
 // tracks -- generates and binds the track-info modules in the max patch
 function tracks(val)
 {
+	this.patcher.apply(function(object) {
+		if (/track-info$/.test(object.varname)) {
+			this.patcher.remove(object);
+		}
+	});
+
 	if(arguments.length) // bail if no arguments
 	{
 		// parse arguments
@@ -29,19 +35,13 @@ function tracks(val)
 		if(a<0) a = 0; // too few tracks, set to 0
 		if(a>32) a = 32; // too many tracks, set to 32
 
-		// out with the old...
-		for(i=0;i<numtracks;i++) // get rid of the track-info modules using the old number of tracks
-		{
-			this.patcher.remove(trackInfo[i]);
-		}
-
-		// ...in with the new
 		numtracks = a; // update our global number of track-info modules to the new value
 		for(k=0;k<a;k++) // create the track-info modules
 		{
 			if(k%2) { x = 555 } else { x = 255 } // set object’s x co-ordinate
 			y = ~~(k/2) * 45 + 15; // set object’s y co-ordinate
-			trackInfo[k] = this.patcher.newdefault(x, y, "bpatcher", "track-info", "@patching_rect", x, y, 300, 45, "@presentation_rect", x, y, 300, 45, "@presentation", 1, "@args", k+1);
+			n = k+1; // set instance numbering (starts at 1)
+			trackInfo[k] = this.patcher.newdefault(x, y, "bpatcher", "track-info", "@varname", n + "-track-info", "@patching_rect", x, y, 300, 45, "@presentation_rect", x, y, 300, 45, "@presentation", 1, "@args", n);
 		}
 	}
 

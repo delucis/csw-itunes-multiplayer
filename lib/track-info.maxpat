@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 25.0, 69.0, 680.0, 483.0 ],
+		"rect" : [ 460.0, 234.0, 680.0, 483.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,20 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"justification" : 2,
+					"linecolor" : [ 0.75, 0.75, 0.75, 1.0 ],
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 270.0, 90.0, 5.0, 100.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ -13.0, 35.0, 314.0, 10.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 12.0,
@@ -71,7 +85,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgcolor" : [ 0.96, 0.96, 0.96, 0.0 ],
 					"fontname" : "Fira Sans OT",
 					"fontsize" : 44.0,
 					"frgb" : 0.0,
@@ -81,7 +95,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 345.0, 135.0, 59.0, 75.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 241.0, -12.0, 59.0, 75.0 ],
+					"presentation_rect" : [ 0.0, -12.0, 59.0, 75.0 ],
+					"text" : "0",
 					"textcolor" : [ 0.0, 0.0, 0.0, 0.15 ],
 					"textjustification" : 2
 				}
@@ -252,7 +267,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 15.0, 285.0, 165.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 165.0, 0.0, 76.0, 47.0 ]
+					"presentation_rect" : [ 225.0, 0.0, 76.0, 47.0 ]
 				}
 
 			}
@@ -295,7 +310,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 15.0, 244.0, 691.0, 28.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 19.0, 691.0, 28.0 ]
+					"presentation_rect" : [ 60.0, 19.0, 691.0, 28.0 ]
 				}
 
 			}
@@ -311,7 +326,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 15.0, 225.0, 693.0, 28.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 693.0, 28.0 ]
+					"presentation_rect" : [ 60.0, 0.0, 693.0, 28.0 ]
 				}
 
 			}
@@ -340,6 +355,21 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 15.0, 15.0, 66.0, 20.0 ],
 					"text" : "r #1-name"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"grad1" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"grad2" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"id" : "obj-21",
+					"maxclass" : "panel",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 30.0, 300.0, 165.0, 47.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 0.0, 76.0, 47.0 ]
 				}
 
 			}

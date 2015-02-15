@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 44.0, 870.0, 500.0 ],
+		"rect" : [ 0.0, 44.0, 1280.0, 706.0 ],
 		"openrect" : [ 0.0, 0.0, 870.0, 500.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -1537,7 +1537,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 25.0, 69.0, 273.0, 166.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1560,13 +1560,28 @@
 								"box" : 								{
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
+									"frgb" : 0.0,
+									"id" : "obj-2",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 60.0, 15.0, 197.0, 48.0 ],
+									"text" : "initialises by opening the database and counting its items determine the number of items to query"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
 									"id" : "obj-20",
 									"linecount" : 5,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 130.0, 113.0, 74.0 ],
+									"patching_rect" : [ 15.0, 75.0, 113.0, 74.0 ],
 									"text" : ";\rto-database exec \"SELECT COUNT (trackIndex) FROM trackData\""
 								}
 
@@ -1580,7 +1595,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "bang" ],
-									"patching_rect" : [ 50.0, 100.0, 32.5, 20.0 ],
+									"patching_rect" : [ 15.0, 45.0, 32.5, 20.0 ],
 									"text" : "b"
 								}
 
@@ -1595,7 +1610,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 170.0, 130.0, 122.0, 46.0 ],
+									"patching_rect" : [ 135.0, 75.0, 122.0, 46.0 ],
 									"text" : ";\rto-database opendb ./TrackDatabase"
 								}
 
@@ -1608,7 +1623,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 40.0, 25.0, 25.0 ]
+									"patching_rect" : [ 15.0, 15.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -1801,7 +1816,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 62.0, 67.0, 775.0, 601.0 ],
+						"rect" : [ 62.0, 44.0, 775.0, 624.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1820,7 +1835,80 @@
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"frgb" : 0.0,
+									"id" : "obj-27",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 225.0, 285.0, 530.0, 34.0 ],
+									"text" : "filter XML output: opens gate to appropriate output on receiving Name, Artist, Album or Location message, closes gate once that message has passed through."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-22",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "Database population aborted." ],
+									"patching_rect" : [ 555.0, 165.0, 188.0, 20.0 ],
+									"text" : "t \"Database population aborted.\""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"frgb" : 0.0,
+									"id" : "obj-16",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 210.0, 105.0, 266.0, 20.0 ],
+									"text" : "if user types YES, start populating the database"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"frgb" : 0.0,
+									"id" : "obj-15",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 45.0, 15.0, 94.0, 48.0 ],
+									"text" : "get path to iTunes library XML file"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"frgb" : 0.0,
+									"id" : "obj-13",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 180.0, 15.0, 372.0, 20.0 ],
+									"text" : "handle requests to fill the database (avoiding accidental population)"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
@@ -1914,7 +2002,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 694.0, 510.0, 60.0, 20.0 ],
+									"patching_rect" : [ 694.0, 540.0, 60.0, 20.0 ],
 									"text" : "tosymbol"
 								}
 
@@ -1928,7 +2016,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 524.25, 510.0, 60.0, 20.0 ],
+									"patching_rect" : [ 524.25, 540.0, 60.0, 20.0 ],
 									"text" : "tosymbol"
 								}
 
@@ -1942,7 +2030,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 354.5, 510.0, 60.0, 20.0 ],
+									"patching_rect" : [ 354.5, 540.0, 60.0, 20.0 ],
 									"text" : "tosymbol"
 								}
 
@@ -1956,63 +2044,71 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 184.75, 510.0, 60.0, 20.0 ],
+									"patching_rect" : [ 184.75, 540.0, 60.0, 20.0 ],
 									"text" : "tosymbol"
 								}
 
 							}
 , 							{
 								"box" : 								{
+									"annotation" : "Escape apostrophes with backslashes for the SQL query.",
 									"fontname" : "Arial",
 									"fontsize" : 13.0,
+									"hint" : "Escape apostrophes with backslashes for the SQL query.",
 									"id" : "obj-3",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 5,
 									"outlettype" : [ "", "", "", "", "" ],
-									"patching_rect" : [ 15.0, 435.0, 152.0, 21.0 ],
+									"patching_rect" : [ 15.0, 465.0, 152.0, 21.0 ],
 									"text" : "regexp ' @substitute \\\\'\\\\'"
 								}
 
 							}
 , 							{
 								"box" : 								{
+									"annotation" : "Escape apostrophes with backslashes for the SQL query.",
 									"fontname" : "Arial",
 									"fontsize" : 13.0,
+									"hint" : "Escape apostrophes with backslashes for the SQL query.",
 									"id" : "obj-2",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 5,
 									"outlettype" : [ "", "", "", "", "" ],
-									"patching_rect" : [ 168.666656, 434.0, 152.0, 21.0 ],
+									"patching_rect" : [ 168.666656, 464.0, 152.0, 21.0 ],
 									"text" : "regexp ' @substitute \\\\'\\\\'"
 								}
 
 							}
 , 							{
 								"box" : 								{
+									"annotation" : "Escape apostrophes with backslashes for the SQL query.",
 									"fontname" : "Arial",
 									"fontsize" : 13.0,
+									"hint" : "Escape apostrophes with backslashes for the SQL query.",
 									"id" : "obj-1",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 5,
 									"outlettype" : [ "", "", "", "", "" ],
-									"patching_rect" : [ 476.0, 434.0, 152.0, 21.0 ],
+									"patching_rect" : [ 476.0, 464.0, 152.0, 21.0 ],
 									"text" : "regexp ' @substitute \\\\'\\\\'"
 								}
 
 							}
 , 							{
 								"box" : 								{
+									"annotation" : "Escape apostrophes with backslashes for the SQL query.",
 									"fontname" : "Arial",
 									"fontsize" : 13.0,
+									"hint" : "Escape apostrophes with backslashes for the SQL query.",
 									"id" : "obj-21",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 5,
 									"outlettype" : [ "", "", "", "", "" ],
-									"patching_rect" : [ 322.333313, 435.0, 152.0, 21.0 ],
+									"patching_rect" : [ 322.333313, 465.0, 152.0, 21.0 ],
 									"text" : "regexp ' @substitute \\\\'\\\\'"
 								}
 
@@ -2026,7 +2122,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 675.0, 465.0, 87.0, 20.0 ],
+									"patching_rect" : [ 675.0, 495.0, 87.0, 20.0 ],
 									"text" : "v tracktotal 20"
 								}
 
@@ -2040,7 +2136,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 675.0, 435.0, 32.5, 20.0 ],
+									"patching_rect" : [ 675.0, 465.0, 32.5, 20.0 ],
 									"text" : "+ 1"
 								}
 
@@ -2053,7 +2149,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 15.0, 570.0, 85.0, 20.0 ],
+									"patching_rect" : [ 15.0, 600.0, 85.0, 20.0 ],
 									"text" : "s to-database"
 								}
 
@@ -2067,7 +2163,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 150.0, 315.0, 24.0, 20.0 ],
+									"patching_rect" : [ 150.0, 345.0, 24.0, 20.0 ],
 									"text" : "t 4"
 								}
 
@@ -2081,7 +2177,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 105.0, 315.0, 24.0, 20.0 ],
+									"patching_rect" : [ 105.0, 345.0, 24.0, 20.0 ],
 									"text" : "t 3"
 								}
 
@@ -2095,7 +2191,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 60.0, 315.0, 24.0, 20.0 ],
+									"patching_rect" : [ 60.0, 345.0, 24.0, 20.0 ],
 									"text" : "t 2"
 								}
 
@@ -2150,7 +2246,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 705.0, 375.0, 24.0, 20.0 ],
+									"patching_rect" : [ 705.0, 405.0, 24.0, 20.0 ],
 									"text" : "t 0"
 								}
 
@@ -2164,7 +2260,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 705.0, 345.0, 44.0, 20.0 ],
+									"patching_rect" : [ 705.0, 375.0, 44.0, 20.0 ],
 									"text" : "r reset"
 								}
 
@@ -2178,7 +2274,7 @@
 									"numinlets" : 5,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "int" ],
-									"patching_rect" : [ 630.0, 405.0, 73.0, 20.0 ],
+									"patching_rect" : [ 630.0, 435.0, 73.0, 20.0 ],
 									"text" : "counter"
 								}
 
@@ -2192,21 +2288,23 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 630.0, 435.0, 34.0, 20.0 ],
+									"patching_rect" : [ 630.0, 465.0, 34.0, 20.0 ],
 									"text" : "int 0"
 								}
 
 							}
 , 							{
 								"box" : 								{
+									"annotation" : "Format SQL insert-into-table command.",
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
+									"hint" : "Format SQL insert-into-table command.",
 									"id" : "obj-24",
 									"maxclass" : "newobj",
 									"numinlets" : 5,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 15.0, 540.0, 698.0, 20.0 ],
+									"patching_rect" : [ 15.0, 570.0, 698.0, 20.0 ],
 									"text" : "sprintf exec \\\"INSERT INTO trackData('trackIndex'\\, 'Name'\\, 'Artist'\\, 'Album'\\, 'Location') VALUES ('%ld'\\, '%s'\\, '%s'\\, '%s'\\, '%s')\\\""
 								}
 
@@ -2220,7 +2318,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 630.0, 315.0, 24.0, 20.0 ],
+									"patching_rect" : [ 630.0, 345.0, 24.0, 20.0 ],
 									"text" : "t 1"
 								}
 
@@ -2234,7 +2332,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 630.0, 375.0, 34.0, 20.0 ],
+									"patching_rect" : [ 630.0, 405.0, 34.0, 20.0 ],
 									"text" : "gate"
 								}
 
@@ -2248,7 +2346,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "bang", "" ],
-									"patching_rect" : [ 660.0, 315.0, 46.0, 20.0 ],
+									"patching_rect" : [ 660.0, 345.0, 46.0, 20.0 ],
 									"text" : "t 0 b s"
 								}
 
@@ -2262,7 +2360,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 15.0, 315.0, 24.0, 20.0 ],
+									"patching_rect" : [ 15.0, 345.0, 24.0, 20.0 ],
 									"text" : "t 1"
 								}
 
@@ -2276,7 +2374,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 15.0, 405.0, 480.0, 20.0 ],
+									"patching_rect" : [ 15.0, 435.0, 480.0, 20.0 ],
 									"text" : "gate 4"
 								}
 
@@ -2290,7 +2388,7 @@
 									"numinlets" : 5,
 									"numoutlets" : 5,
 									"outlettype" : [ "bang", "bang", "bang", "bang", "" ],
-									"patching_rect" : [ 15.0, 285.0, 199.0, 20.0 ],
+									"patching_rect" : [ 15.0, 300.0, 199.0, 20.0 ],
 									"text" : "sel Name Artist Album Location"
 								}
 
@@ -2411,6 +2509,15 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-22", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-11", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-30", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -2480,6 +2587,16 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-21", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 564.5, 237.0, 264.5, 237.0 ],
+									"source" : [ "obj-22", 0 ]
 								}
 
 							}
@@ -2724,7 +2841,7 @@
 									"destination" : [ "obj-24", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 639.5, 495.0, 24.5, 495.0 ],
+									"midpoints" : [ 639.5, 525.0, 24.5, 525.0 ],
 									"source" : [ "obj-49", 0 ]
 								}
 
@@ -2898,6 +3015,15 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-81", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-22", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-9", 1 ]
 								}
 
 							}
@@ -3505,6 +3631,21 @@
 								"box" : 								{
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
+									"frgb" : 0.0,
+									"id" : "obj-7",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 45.0, 10.5, 180.0, 34.0 ],
+									"text" : "get tracks from database using maxtracks global variable"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
 									"id" : "obj-5",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -3640,8 +3781,10 @@
 							}
 , 							{
 								"box" : 								{
+									"annotation" : "Make sure we’re not asking for more tracks than exist",
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
+									"hint" : "Make sure we’re not asking for more tracks than exist",
 									"id" : "obj-21",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
@@ -3724,8 +3867,10 @@
 							}
 , 							{
 								"box" : 								{
+									"annotation" : "Get a random number w/o duplicates, within the range of the number of tracks in the database.",
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
+									"hint" : "Get a random number w/o duplicates, within the range of the number of tracks in the database.",
 									"id" : "obj-93",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
@@ -4064,7 +4209,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 15.0, 210.0, 360.0, 20.0 ],
-									"text" : "prepares database for filling; cleans up & closes database on quit"
+									"text" : "prepares database for filling; opens/closes database on load/quit"
 								}
 
 							}

@@ -31,15 +31,93 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"color" : [ 1.0, 0.890196, 0.090196, 1.0 ],
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 12.0,
-					"id" : "obj-12",
+					"id" : "obj-968",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 988.166626, 420.0, 130.0, 20.0 ],
-					"text" : "poly~ itunes-player 20"
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 6,
+							"minor" : 1,
+							"revision" : 9,
+							"architecture" : "x86"
+						}
+,
+						"rect" : [ 25.0, 69.0, 640.0, 480.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Helvetica Neue",
+						"gridonopen" : 0,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 0,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"boxanimatetime" : 200,
+						"imprint" : 0,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-2",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 15.0, 60.0, 96.0, 20.0 ],
+									"text" : "print pretty-poly"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-1",
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 15.0, 15.0, 25.0, 25.0 ]
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 988.166626, 420.0, 147.0, 20.0 ],
+					"saved_object_attributes" : 					{
+						"default_fontface" : 0,
+						"default_fontname" : "Helvetica Neue",
+						"default_fontsize" : 12.0,
+						"description" : "",
+						"digest" : "",
+						"fontface" : 0,
+						"fontname" : "Helvetica Neue",
+						"fontsize" : 12.0,
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p poly-crash-test-dummy"
 				}
 
 			}
@@ -810,93 +888,15 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 1.0, 0.890196, 0.090196, 1.0 ],
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 12.0,
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patcher" : 					{
-						"fileversion" : 1,
-						"appversion" : 						{
-							"major" : 6,
-							"minor" : 1,
-							"revision" : 9,
-							"architecture" : "x86"
-						}
-,
-						"rect" : [ 25.0, 69.0, 640.0, 480.0 ],
-						"bglocked" : 0,
-						"openinpresentation" : 0,
-						"default_fontsize" : 12.0,
-						"default_fontface" : 0,
-						"default_fontname" : "Helvetica Neue",
-						"gridonopen" : 0,
-						"gridsize" : [ 15.0, 15.0 ],
-						"gridsnaponopen" : 0,
-						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
-						"boxanimatetime" : 200,
-						"imprint" : 0,
-						"enablehscroll" : 1,
-						"enablevscroll" : 1,
-						"devicewidth" : 0.0,
-						"description" : "",
-						"digest" : "",
-						"tags" : "",
-						"boxes" : [ 							{
-								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
-									"id" : "obj-2",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 15.0, 60.0, 96.0, 20.0 ],
-									"text" : "print pretty-poly"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"comment" : "",
-									"id" : "obj-1",
-									"maxclass" : "inlet",
-									"numinlets" : 0,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 15.0, 15.0, 25.0, 25.0 ]
-								}
-
-							}
- ],
-						"lines" : [ 							{
-								"patchline" : 								{
-									"destination" : [ "obj-2", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-1", 0 ]
-								}
-
-							}
- ]
-					}
-,
-					"patching_rect" : [ 988.166626, 390.0, 147.0, 20.0 ],
-					"saved_object_attributes" : 					{
-						"default_fontface" : 0,
-						"default_fontname" : "Helvetica Neue",
-						"default_fontsize" : 12.0,
-						"description" : "",
-						"digest" : "",
-						"fontface" : 0,
-						"fontname" : "Helvetica Neue",
-						"fontsize" : 12.0,
-						"globalpatchername" : "",
-						"tags" : ""
-					}
-,
-					"text" : "p poly-crash-test-dummy"
+					"patching_rect" : [ 988.166626, 390.0, 130.0, 20.0 ],
+					"text" : "poly~ itunes-player 20"
 				}
 
 			}
@@ -4064,7 +4064,7 @@
 , 			{
 				"box" : 				{
 					"args" : [ 1 ],
-					"id" : "obj-849",
+					"id" : "obj-929",
 					"maxclass" : "bpatcher",
 					"name" : "track-info.maxpat",
 					"numinlets" : 0,
@@ -4079,7 +4079,7 @@
 , 			{
 				"box" : 				{
 					"args" : [ 2 ],
-					"id" : "obj-851",
+					"id" : "obj-931",
 					"maxclass" : "bpatcher",
 					"name" : "track-info.maxpat",
 					"numinlets" : 0,
@@ -4094,7 +4094,7 @@
 , 			{
 				"box" : 				{
 					"args" : [ 3 ],
-					"id" : "obj-853",
+					"id" : "obj-933",
 					"maxclass" : "bpatcher",
 					"name" : "track-info.maxpat",
 					"numinlets" : 0,
@@ -4109,7 +4109,7 @@
 , 			{
 				"box" : 				{
 					"args" : [ 4 ],
-					"id" : "obj-855",
+					"id" : "obj-935",
 					"maxclass" : "bpatcher",
 					"name" : "track-info.maxpat",
 					"numinlets" : 0,
@@ -4124,7 +4124,7 @@
 , 			{
 				"box" : 				{
 					"args" : [ 5 ],
-					"id" : "obj-857",
+					"id" : "obj-937",
 					"maxclass" : "bpatcher",
 					"name" : "track-info.maxpat",
 					"numinlets" : 0,
@@ -4139,7 +4139,7 @@
 , 			{
 				"box" : 				{
 					"args" : [ 6 ],
-					"id" : "obj-859",
+					"id" : "obj-939",
 					"maxclass" : "bpatcher",
 					"name" : "track-info.maxpat",
 					"numinlets" : 0,
@@ -4154,7 +4154,7 @@
 , 			{
 				"box" : 				{
 					"args" : [ 7 ],
-					"id" : "obj-861",
+					"id" : "obj-941",
 					"maxclass" : "bpatcher",
 					"name" : "track-info.maxpat",
 					"numinlets" : 0,
@@ -4169,7 +4169,7 @@
 , 			{
 				"box" : 				{
 					"args" : [ 8 ],
-					"id" : "obj-863",
+					"id" : "obj-943",
 					"maxclass" : "bpatcher",
 					"name" : "track-info.maxpat",
 					"numinlets" : 0,
@@ -4184,7 +4184,7 @@
 , 			{
 				"box" : 				{
 					"args" : [ 9 ],
-					"id" : "obj-865",
+					"id" : "obj-945",
 					"maxclass" : "bpatcher",
 					"name" : "track-info.maxpat",
 					"numinlets" : 0,
@@ -4199,7 +4199,7 @@
 , 			{
 				"box" : 				{
 					"args" : [ 10 ],
-					"id" : "obj-867",
+					"id" : "obj-947",
 					"maxclass" : "bpatcher",
 					"name" : "track-info.maxpat",
 					"numinlets" : 0,
@@ -4214,7 +4214,7 @@
 , 			{
 				"box" : 				{
 					"args" : [ 11 ],
-					"id" : "obj-869",
+					"id" : "obj-949",
 					"maxclass" : "bpatcher",
 					"name" : "track-info.maxpat",
 					"numinlets" : 0,
@@ -4229,7 +4229,7 @@
 , 			{
 				"box" : 				{
 					"args" : [ 12 ],
-					"id" : "obj-871",
+					"id" : "obj-951",
 					"maxclass" : "bpatcher",
 					"name" : "track-info.maxpat",
 					"numinlets" : 0,
@@ -4244,7 +4244,7 @@
 , 			{
 				"box" : 				{
 					"args" : [ 13 ],
-					"id" : "obj-873",
+					"id" : "obj-953",
 					"maxclass" : "bpatcher",
 					"name" : "track-info.maxpat",
 					"numinlets" : 0,
@@ -4259,7 +4259,7 @@
 , 			{
 				"box" : 				{
 					"args" : [ 14 ],
-					"id" : "obj-875",
+					"id" : "obj-955",
 					"maxclass" : "bpatcher",
 					"name" : "track-info.maxpat",
 					"numinlets" : 0,
@@ -4274,7 +4274,7 @@
 , 			{
 				"box" : 				{
 					"args" : [ 15 ],
-					"id" : "obj-877",
+					"id" : "obj-957",
 					"maxclass" : "bpatcher",
 					"name" : "track-info.maxpat",
 					"numinlets" : 0,
@@ -4289,7 +4289,7 @@
 , 			{
 				"box" : 				{
 					"args" : [ 16 ],
-					"id" : "obj-879",
+					"id" : "obj-959",
 					"maxclass" : "bpatcher",
 					"name" : "track-info.maxpat",
 					"numinlets" : 0,
@@ -4304,7 +4304,7 @@
 , 			{
 				"box" : 				{
 					"args" : [ 17 ],
-					"id" : "obj-881",
+					"id" : "obj-961",
 					"maxclass" : "bpatcher",
 					"name" : "track-info.maxpat",
 					"numinlets" : 0,
@@ -4319,7 +4319,7 @@
 , 			{
 				"box" : 				{
 					"args" : [ 18 ],
-					"id" : "obj-883",
+					"id" : "obj-963",
 					"maxclass" : "bpatcher",
 					"name" : "track-info.maxpat",
 					"numinlets" : 0,
@@ -4334,7 +4334,7 @@
 , 			{
 				"box" : 				{
 					"args" : [ 19 ],
-					"id" : "obj-885",
+					"id" : "obj-965",
 					"maxclass" : "bpatcher",
 					"name" : "track-info.maxpat",
 					"numinlets" : 0,
@@ -4349,7 +4349,7 @@
 , 			{
 				"box" : 				{
 					"args" : [ 20 ],
-					"id" : "obj-887",
+					"id" : "obj-967",
 					"maxclass" : "bpatcher",
 					"name" : "track-info.maxpat",
 					"numinlets" : 0,
@@ -4694,17 +4694,17 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "trackDisplay.js",
-				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/myPatches/20150205 iTunes multiplayer/csw-itunes-multiplayer",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "itunes-player.maxpat",
 				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/myPatches/20150205 iTunes multiplayer/csw-itunes-multiplayer/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "trackDisplay.js",
+				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/myPatches/20150205 iTunes multiplayer/csw-itunes-multiplayer",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{

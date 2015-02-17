@@ -22,6 +22,7 @@ function tracks(val)
 {
 	this.patcher.apply(function(object) {
 		if (/track-info$/.test(object.varname)) {
+			// With thanks to Josiah Wolf Oberholtzer for clarifying this
 			this.patcher.remove(object);
 		}
 	});

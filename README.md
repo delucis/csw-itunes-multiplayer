@@ -10,3 +10,7 @@ Parses iTunes Library XML file, retrieving artist, album, track name and file lo
 
 * [sadam.rapidXML] from Ádám Siska’s [sadam library](http://sadam.hu/en/software) for parsing the iTunes XML
 * [mxj ej.urn] from Emmanuel Jourdan’s [ejies collection](https://github.com/emmanueljourdan/ejies) to deal with random selection from a database containing more than 4096 entries
+
+## Acknowledgments
+
+With thanks to [Josiah Wolf Oberholtzer](http://josiahwolfoberholtzer.com/) for unravelling the secrets of `this.patcher` in Max’s scripting environment.
